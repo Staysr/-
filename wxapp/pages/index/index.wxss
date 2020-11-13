@@ -1,0 +1,71 @@
+@import '../../style/weather.min.wxss';/*引入天气的css*/
+/* 样式根据自己需求改吧 */
+.Bweather {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  padding-top: 150px;
+  color: #fff;
+  font-weight: 600;
+}
+
+page {
+  height: 100%;
+}
+
+.bg {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.rainImgWindows{
+  display: flex;
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+}
+
+.rainImgText{
+  width: 100%;
+}
+
+.wt_date{
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  color: #FFF;
+  opacity: 0.8;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  font-family: 'cyqk';
+}
+.tips{
+  color: #FFF;
+  opacity: 0.8;
+  font-size: 30rpx;
+  text-indent: 60rpx;
+  padding: 0 40rpx;
+  line-height: 50rpx;
+  font-family: 'cyqk';
+}
+
+.pm{
+  color: #FFF;
+  opacity: 0.8;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  display: flex;
+  position: fixed;
+  left: 8rpx;
+  top: 95rpx;
+}
+@font-face {
+    font-family: 'cyqk';
+    src: url('http://download.tpengyun.cn/res/WeatherTop/font.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

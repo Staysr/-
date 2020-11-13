@@ -1,0 +1,22 @@
+<!-- 下雨天 -->
+<view wx:if="{{weather==1}}" class='bg weather rain' style="background: url('{{rain_bg}}');background-repeat: no-repeat;background-size: 100% 100%;">
+  <view class="wt_date" style="height:{{CustomBar}}px;">
+    <view class='text' style='padding-top:{{StatusBar}}px;'>{{City}} {{date}} {{Desc}}</view>
+  </view>
+  <view class='pm' style='padding-top:{{StatusBar}}px;'>PM2.5：{{pm25}}</view>
+  <image bindtap='toDo' data-weather='2' class="rainImgText" mode='widthFix' src='http://download.tpengyun.cn/res/WeatherTop/rain_text.png' />
+  <view class='tips'>{{tips}}</view>
+  <image class="rainImgWindows" mode='widthFix' src='http://download.tpengyun.cn/res/WeatherTop/rain_windows.png' />
+</view>
+
+
+<!-- 下雪天 -->
+<view wx:if="{{weather==2}}" class='bg weather snow' style=" background: url( '{{snow_bg}}');background-repeat: no-repeat;background-size: 100% 100%; ">
+  <view class="wt_date " style="height:{{CustomBar}}px; ">
+    <view class='text' style='padding-top:{{StatusBar}}px;'>{{City}} {{date}} {{Desc}}</view>
+  </view>
+  <view class='pm' style='padding-top:{{StatusBar}}px;'>PM2.5：{{pm25}}</view>
+  <image bindtap='toDo' data-weather='1' class="rainImgText " mode='widthFix' src='http://download.tpengyun.cn/res/WeatherTop/snow_text.png' />
+  <view class='tips'>{{tips}}</view>
+  <image class="rainImgWindows " mode='widthFix' src='http://download.tpengyun.cn/res/WeatherTop/snow_decorate.png' />
+</view>
